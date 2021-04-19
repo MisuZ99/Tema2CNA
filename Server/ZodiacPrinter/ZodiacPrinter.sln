@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZodiacPrinter", "ZodiacPrinter.csproj", "{52E0F36C-74AC-4088-BB55-63A934EB41A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E0F36C-74AC-4088-BB55-63A934EB41A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E0F36C-74AC-4088-BB55-63A934EB41A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E0F36C-74AC-4088-BB55-63A934EB41A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E0F36C-74AC-4088-BB55-63A934EB41A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0B8F6CF-3236-4C59-8E72-17B856D5A9CB}
+	EndGlobalSection
+EndGlobal
