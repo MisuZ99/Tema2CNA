@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZodiacPrinterClient";
+
+package printer;
+
+
+service Spring {
+  rpc SpringSign (SpringRequest) returns (SpringReply);
+}
+
+message SpringRequest {
+  string date = 1;
+}
+
+message SpringReply {
+  string zodiacSign = 1;
+}
