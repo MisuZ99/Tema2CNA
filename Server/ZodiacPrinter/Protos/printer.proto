@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZodiacPrinter";
+
+package printer;
+
+
+service Printer {
+  rpc PrintSign (PrintRequest) returns (PrintReply);
+}
+
+message PrintRequest {
+  string date = 1;
+}
+
+message PrintReply {
+  string zodiacSign = 1;
+}
