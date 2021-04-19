@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "ZodiacPrinter";
+option csharp_namespace = "ZodiacPrinterClient";
 
 package printer;
 
