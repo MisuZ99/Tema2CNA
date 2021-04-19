@@ -5,14 +5,14 @@ option csharp_namespace = "ZodiacPrinter";
 package printer;
 
 
-service Printer {
-  rpc PrintSign (PrintRequest) returns (PrintReply);
+service Winter {
+  rpc WinterSign (WinterRequest) returns (WinterReply);
 }
 
-message PrintRequest {
+message WinterRequest {
   string date = 1;
 }
 
-message PrintReply {
+message WinterReply {
   string zodiacSign = 1;
 }

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZodiacPrinterClient";
+
+package printer;
+
+
+service Summer {
+  rpc SummerSign (SummerRequest) returns (SummerReply);
+}
+
+message SummerRequest {
+  string date = 1;
+}
+
+message SummerReply {
+  string zodiacSign = 1;
+}
