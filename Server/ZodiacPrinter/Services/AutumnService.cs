@@ -33,16 +33,20 @@ namespace ZodiacPrinter
             int i = 0;
             int day = 0;
             int month = 0;
+            Console.WriteLine(date);
             while (!date[i].Equals('/'))
             {
+                month = month * 10 + (int)Char.GetNumericValue(date[i]);
                 i++;
-                day = day * 10 + Convert.ToInt32(date[i]);
             }
+            i++;
             while (!date[i].Equals('/'))
             {
+                
+                day = day * 10 + (int)Char.GetNumericValue(date[i]);
                 i++;
-                month = month * 10 + Convert.ToInt32(date[i]);
             }
+            
             Console.WriteLine(day);
             Console.WriteLine(month);
             if (month == startMonth)
