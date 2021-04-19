@@ -46,9 +46,7 @@ namespace ZodiacPrinter
                 day = day * 10 + (int)Char.GetNumericValue(date[i]);
                 i++;
             }
-            
-            Console.WriteLine(day);
-            Console.WriteLine(month);
+
             if (month == startMonth)
             {
                 if (day > startDay)

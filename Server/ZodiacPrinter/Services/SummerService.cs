@@ -47,8 +47,7 @@ namespace ZodiacPrinter
                 i++;
             }
 
-            Console.WriteLine(day);
-            Console.WriteLine(month);
+
             if (month == startMonth)
             {
                 if (day > startDay)
