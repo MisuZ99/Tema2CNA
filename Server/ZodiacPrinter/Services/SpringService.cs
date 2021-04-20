@@ -32,7 +32,6 @@ namespace ZodiacPrinter
             int i = 0;
             int day = 0;
             int month = 0;
-            Console.WriteLine(date);
             while (!date[i].Equals('/'))
             {
                 month = month * 10 + (int)Char.GetNumericValue(date[i]);
@@ -66,6 +65,7 @@ namespace ZodiacPrinter
             {
                 this.ReadFromFile();
                 Console.WriteLine("Client connected on Spring!");
+                Console.WriteLine(request.Date);
                 for (int i = 0; i < springSigns.Count; i++)
                 {
                     if (CheckSign(springSigns[i].StartDay, springSigns[i].EndDay, springSigns[i].StartMonth,

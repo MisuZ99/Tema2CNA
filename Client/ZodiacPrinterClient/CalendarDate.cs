@@ -78,11 +78,11 @@ namespace ZodiacPrinterClient
 
         public static bool Validation(CalendarDate date)
         {
-            if (date.Month > 12||date.Month<=0)
+            if (date.Month > 12 || date.Month <= 0)
             {
                 Console.WriteLine("There are only 12 months");
                 return false;
-                
+
             }
 
             if (date.Day <= 0)
@@ -93,7 +93,7 @@ namespace ZodiacPrinterClient
 
             if (date.Month == 1)
             {
-                if(date.Day>31)
+                if (date.Day > 31)
                 {
                     Console.WriteLine("January has only 31 days");
                     return false;
@@ -101,9 +101,9 @@ namespace ZodiacPrinterClient
             }
             if (date.Month == 2)
             {
-                if ((date.Year % 4 == 0&&date.Year%100!=0)||date.Year%400==0)
+                if ((date.Year % 4 == 0 && date.Year % 100 != 0) || date.Year % 400 == 0)
                 {
-                    if(date.Day>29)
+                    if (date.Day > 29)
                     {
                         Console.WriteLine("This February has only 29 days");
                         return false;
@@ -112,6 +112,7 @@ namespace ZodiacPrinterClient
                 else if (date.Day > 28)
                 {
                     Console.WriteLine("This February has only 28 days");
+                    return false;
                 }
             }
             if (date.Month == 3)
@@ -194,8 +195,6 @@ namespace ZodiacPrinterClient
                     return false;
                 }
             }
-
-
 
             return true;
         }

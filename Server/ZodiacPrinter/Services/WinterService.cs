@@ -32,7 +32,6 @@ namespace ZodiacPrinter
             int i = 0;
             int day = 0;
             int month = 0;
-            Console.WriteLine(date);
             while (!date[i].Equals('/'))
             {
                 month = month * 10 + (int)Char.GetNumericValue(date[i]);
@@ -68,6 +67,7 @@ namespace ZodiacPrinter
             {
                 this.ReadFromFile();
                 Console.WriteLine("Client connected on Winter!");
+                Console.WriteLine(request.Date);
                 for (int i = 0; i < winterSigns.Count; i++)
                 {
                     if (CheckSign(winterSigns[i].StartDay, winterSigns[i].EndDay, winterSigns[i].StartMonth,
